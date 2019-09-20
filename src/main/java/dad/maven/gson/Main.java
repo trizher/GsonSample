@@ -20,8 +20,9 @@ public class Main {
 		    p.setEdad(sc.nextInt());
         } catch (Exception e) {
         	System.out.println("Edad incorrecta");
-        } 
+        }
 	    
+	    sc.close();
 	    Gson gson = new GsonBuilder().setPrettyPrinting().create();
 	    String json = gson.toJson(p);
 	    System.out.println(json);
